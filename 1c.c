@@ -7,7 +7,7 @@ int main(void)
   printf("n = ");
   scanf("%n", &n);
   
-  if( (int)(n & 1) == 0 ){	//(n&1)をintに変換する
+  if( (n & 1) == 0 ){	//(n&1)が優先されるようにする
     printf("%d は偶数です\n", n);
   }
   return 0;
